@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 768px) { width: 720px; }
+	@media (min-width: 992px) { width: 960px; }
+	@media (min-width: 1200px) { width: 1140px; }
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -0.75rem;
+		margin-left: -0.75rem;
+
+		& > * {
+			box-sizing: border-box;
+			flex-shrink: 0;
+			width: 100%;
+			max-width: 100%;
+			padding-right: 0.75rem;
+			padding-left: 0.75rem;
+		}
+	}
+}

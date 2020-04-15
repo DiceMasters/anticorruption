@@ -1,0 +1,46 @@
+.search {
+    &__widget {
+        padding-left: 13px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 1px;
+            height: 40px;
+            background-color: #EBEBEB;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__wrapper {
+        width: 0;
+        position: absolute;
+        top: 50%;
+        right: 31px;
+        transform: translateY(-50%);
+        overflow: hidden;
+
+        input {
+            transition: all .3s;
+
+            &:focus { outline: none; }
+        }
+
+        &.active {
+            width: auto;
+
+            input {
+                padding: 13px 15px;
+                border: 1px solid #EBEBEB;
+            }
+        }
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
