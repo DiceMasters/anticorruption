@@ -5,6 +5,26 @@
   align-items: stretch;
   padding: 30px 0;
 }
+.content__container {
+  color: #707070;
+}
+.content__container p {
+  margin: 0;
+  padding-bottom: 17px;
+  line-height: 1.4;
+}
+.content__container strong,
+.content__container b {
+  font-weight: 600;
+}
+.content__container p,
+.content__container a,
+.content__container span,
+.content__container em,
+.content__container strong,
+.content__container b {
+  font-size: 14px;
+}
 .header__subnavigation {
   width: 100%;
   height: 28px;
@@ -203,6 +223,12 @@
   width: 24px;
   height: 24px;
 }
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #CAA45D;
+  margin-bottom: 17px;
+}
 .slider {
   margin-bottom: 46px;
 }
@@ -244,6 +270,48 @@
 .social__item .icon {
   width: 18px;
   height: 13px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.title p {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+.button__jumbo {
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(180deg, #e8d3ab 0%, #caa45d 100%);
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  padding: 0 50px;
+  border-radius: 20px;
+}
+.button__jumbo__group {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.button__jumbo__group .button__jumbo {
+  width: calc(100% / 3);
+  flex-grow: 1;
+  margin-bottom: 32px;
+}
+.button__jumbo__group .button__jumbo:not(:last-child) {
+  margin-right: 38px;
+}
+.button,
+.button:hover,
+.button:focus {
+  text-decoration: none;
 }
 .flex {
   display: flex;
@@ -289,6 +357,20 @@
 }
 .flex__jc-sa {
   justify-content: space-around;
+}
+.float__left {
+  float: left;
+}
+.float__left__img {
+  padding-right: 32px;
+  padding-bottom: 20px;
+}
+.float__right {
+  float: right;
+}
+.float__right__img {
+  padding-left: 32px;
+  padding-bottom: 20px;
 }
 .container {
   width: 100%;
@@ -357,8 +439,15 @@
 .text__size--24 {
   font-size: 24px;
 }
-.button__jumbo {
-  height: 117px;
-  background: #e8d3ab;
-  background: linear-gradient(180deg, #e8d3ab 0%, #caa45d 100%);
+.text__weight--bold {
+  font-weight: bold;
+}
+.text__weight--semibold {
+  font-weight: 600;
+}
+.text__weight--regular {
+  font-weight: normal;
+}
+.text__weight--light {
+  font-weight: 300;
 }
