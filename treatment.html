@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Обращения граждан</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/fonts/SegoeUI/stylesheet.css">
+	<link rel="stylesheet" href="/assets/css/Vendor.css">
+	<link rel="stylesheet" href="/assets/css/Bundle.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__subnavigation">
+			<div class="container">
+				<div class="container__row">
+					<div class="header__subnavigation__row">
+						<div class="header__subnavigation__item">
+							<div class="icon__box">
+								<i class="icon icon--placemark"></i> Москва, Ленинский проспект, 42к2
+							</div>
+						</div>
+						<div class="header__subnavigation__item">
+							<div class="social__group">
+								<a href="#" class="social__item"><i class="icon icon--facebook"></i></a>
+								<a href="#" class="social__item"><i class="icon icon--instagram"></i></a>
+								<a href="#" class="social__item"><i class="icon icon--twitter"></i></a>
+								<a href="#" class="social__item"><i class="icon icon--youtube"></i></a>
+								<a href="#" class="social__item"><i class="icon icon--vk"></i></a>
+							</div>
+							<div class="icon__box text__size--14">
+								<i class="icon icon--phone"></i> +7 (495) 133-65-45
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="container">
+				<div class="container__row">
+					<div class="flex flex__jc-sb flex__ai-c">
+						<a href="#" class="logo">
+							<img src="/assets/images/logo.svg" alt="" class="logo__image">
+							<span class="logo__text">
+								Федеральный комитет по борьбе<br>
+								с коррупцией в высших эшелонах власти
+							</span>
+						</a>
+						<nav class="navigation">
+							<a href="#" class="navigation__item">Главная</a>
+							<a href="#" class="navigation__item">
+								О комитете
+								<div class="navigation__subnavigation__wrapper">
+									<div class="navigation__subnavigation">
+										<div class="navigation__subnavigation__item">История комитета</div>
+										<div class="navigation__subnavigation__item">Миссия и стратегия</div>
+										<div class="navigation__subnavigation__item">Вступить в комитет</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="navigation__item">Руководители</a>
+							<a href="#" class="navigation__item">Документы</a>
+							<a href="#" class="navigation__item">Юридическая помощь</a>
+							<a href="#" class="navigation__item">Пресс-центр</a>
+							<a href="#" class="navigation__item">Контакты</a>
+							<a href="#" class="navigation__item position--static">
+								<div class="search__widget" id="js-searchWidget">
+									<div class="search__wrapper">
+										<input type="text" name="search">
+									</div>
+									<i class="icon icon--search"></i>
+								</div>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<div class="content">
+    <div class="container">
+        <div class="container__row">
+            <section class="content__main">
+                <div class="title">
+                    <img src="/assets/images/logo.svg" alt="герб" class="title__preimg">
+                    <p>Обращение граждан</p>
+                </div>
+                <div class="content__container">
+                    <p>
+                        Уважаемые граждане Российской Федерации, а также граждане других республик, временно находящиеся на территории РФ. Если у Вас возникла проблема с решением правового вопроса с представителями административных учреждений, органов исполнительной власти и других структур и Вы считаете, что в Ваш адрес или в адрес другого гражданина(граждан) происходит нарушение законодательства РФ, то Вы можете заполнить форму ниже и изложить в краткой или подробной форме суть Вашего вопроса, приложив при необходимости любые официальные документы, имеющие отношение к данному вопросу.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__row">
+            <form action="#" class="form">
+                <div class="form__head">
+                    Вам кажется что вас пытаются обмануть?<br>
+                    Сообщите об этом!
+                </div>
+                <div class="form__body">
+                    <div class="form__body__item">
+                        <p>
+                            В течение 24 часов с Вами свяжется представитель соответствующего комитета для взаимодействия<br>
+                            по решению Вашего вопроса.
+                        </p>
+                    </div>
+                    <div class="form__body__item">
+                        <input type="text" class="input__text" placeholder="Введите Имя">
+                        <input type="text" class="input__text" placeholder="Введите Фамилию">
+                        <input type="text" class="input__text" placeholder="Введите Отчество">
+                    </div>
+                    <div class="form__body__item">
+                        <input type="text" class="input__text" placeholder="+7 (___) ___-__-__">
+                        <input type="text" class="input__text" placeholder="Введите email">
+                        <div class="input__file">
+                            <input type="file" id="form-file" class="input__file__target" data-multiple-caption="{count} files selected">
+                            <label for="form-file">
+                                Прикрепить файл
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__body__item">
+                        <input type="text" class="input__text form__element__fullwidth text__align--left" placeholder="Укажите структуру например: ЖКХ, Полиция и. т.д">
+                    </div>
+                    <div class="form__body__item">
+                        <textarea rows="5" class="input__text form__element__fullwidth text__align--left" placeholder="Ваше сообщение (по желанию)"></textarea>
+                    </div>
+                    <div class="form__body__item flex__jc-sb">
+                        <div class="input__checkbox">
+                            <input type="checkbox" id="form-checkbox">
+                            <label for="form-checkbox">
+                                Отправляя заявку, я соглашаюсь на <a href="#">обработку персональных данных</a>
+                            </label>
+                        </div>
+                        <button class="button button__active margin__remove--h">Отправить обращение</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__row">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__item">Главная</a>
+                <a href="#" class="breadcrumbs__item">Обращения граждан</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<footer class="footer">
+		<div class="footer__main">
+			<div class="container">
+				<div class="container__row">
+					<div class="footer__main__container">
+						<a href="#" class="logo">
+							<img src="/assets/images/logo.svg" alt="" class="logo__image">
+							<span class="logo__text text__color--white">
+								Федеральный комитет по борьбе<br>
+								с коррупцией в высших эшелонах власти
+							</span>
+						</a>
+						<nav class="navigation">
+							<a href="#" class="navigation__item">Главная</a>
+							<a href="#" class="navigation__item">О комитете</a>
+							<a href="#" class="navigation__item">Руководители</a>
+							<a href="#" class="navigation__item">Документы</a>
+							<a href="#" class="navigation__item">Юридическая помощь</a>
+							<a href="#" class="navigation__item">Пресс-центр</a>
+							<a href="#" class="navigation__item">Контакты</a>
+						</nav>
+					</div>
+					<div class="footer__main__grid">
+						<div class="footer__main__grid__col">
+							<div class="footer__navigation">
+								<a href="#" class="footer__navigation__item">Устав</a>
+								<a href="#" class="footer__navigation__item">Учредительный протокол</a>
+								<a href="#" class="footer__navigation__item">Вступить в комитет</a>
+							</div>
+						</div>
+						<div class="footer__main__grid__col">
+							<div class="footer__navigation">
+								<a href="#" class="footer__navigation__item">Председатели комитетов</a>
+								<a href="#" class="footer__navigation__item">Заместители председателя</a>
+								<a href="#" class="footer__navigation__item">Федеральный закон о противодействии коррупции</a>
+								<a href="#" class="footer__navigation__item">Полномочные представители</a>
+							</div>
+						</div>
+						<div class="footer__main__grid__col">
+							<div class="footer__contacts">
+								<div class="icon__box text__size--14">
+									<i class="icon icon--dphone"></i> +7 (495) 133-65-45
+								</div>
+								<div class="icon__box">
+									<i class="icon icon--dplacemark"></i> Москва, Ленинский проспект, 42к2
+								</div>
+								<div class="social__group">
+									<a href="#" class="social__item"><i class="icon icon--dfacebook"></i></a>
+									<a href="#" class="social__item"><i class="icon icon--dinstagram"></i></a>
+									<a href="#" class="social__item"><i class="icon icon--dtwitter"></i></a>
+									<a href="#" class="social__item"><i class="icon icon--dyoutube"></i></a>
+									<a href="#" class="social__item"><i class="icon icon--dvk"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__notice">
+				<p>Все права защищены. Москва 2020</p>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="/assets/vendor/swiper/swiper.min.js"></script>
+	<script src="/assets/js/Bundle.js"></script>
+</body>
+</html>

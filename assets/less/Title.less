@@ -1,13 +1,47 @@
 .title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 24px;
 
-  p {
-    font-size: 40px;
-    font-weight: 600;
-    color: black;
-    text-align: center;
-    margin: 0;
-  }
+	p {
+		font-size: 40px;
+		font-weight: 600;
+		color: black;
+		text-align: center;
+		margin: 0;
+	}
+
+	span {
+		max-width: 710px;
+		font-size: 25px;
+		font-weight: 300;
+		color: black;
+		text-align: center;
+		line-height: 35px;
+		margin-top: 16px;
+		margin-bottom: 24px;
+	}
+
+	/**
+	* Цвета
+	*/
+	&--white {
+		p, span { color: white; }
+	}
+
+	/**
+	* Выравнивание
+	*/
+	&__left { align-items: flex-start; }
+	&__right { align-items: flex-end; }
+
+	/**
+	* Элементы заголовка
+	*/
+	&__preimg {
+		width: auto;
+		height: 156px;
+		margin-bottom: 45px;
+	}
 }

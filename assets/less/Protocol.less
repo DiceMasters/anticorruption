@@ -1,0 +1,37 @@
+.protocol {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+
+        .image {
+            width: 181px;
+            height: 248px;
+            margin-bottom: 26px;
+            box-shadow: 0 3px 53px -19px rgba(0, 0, 0, .16);
+            cursor: pointer;
+
+            &:not(:nth-child(3n + 3)) { margin-right: 47px; }
+        }
+    }
+}

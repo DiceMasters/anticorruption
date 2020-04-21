@@ -1,0 +1,29 @@
+.order {
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .image {
+            width: 181px;
+            height: 248px;
+            margin-bottom: 26px;
+            box-shadow: 0 3px 53px -19px rgba(0, 0, 0, .16);
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+
+        &:not(:nth-child(3n + 3)):not(:last-child) { margin-right: 47px; }
+    }
+}

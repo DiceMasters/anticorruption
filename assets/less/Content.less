@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    background-image: url('/assets/images/content_bg.svg');
+    background-position: right -530px top 43px;
+    background-size: 1062px 1164px;
+    background-repeat: no-repeat;
     padding: 30px 0;
 
     &__container {
@@ -17,5 +21,33 @@
         strong, b { font-weight: 600; }
 
         p, a, span, em, strong, b { font-size: 14px; }
+    }
+
+    &__fullwidth {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: calc(100vw - 17px);
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+
+    /*
+    Темплейты
+    */
+    &--padding-template-1 {
+        padding-top: 83px;
+        padding-bottom: 44px;
     }
 }

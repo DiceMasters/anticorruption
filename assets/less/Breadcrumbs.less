@@ -1,0 +1,29 @@
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        font-size: 14px;
+        color: black;
+        line-height: 19px;
+
+        &, &:hover, &:focus { text-decoration: none; }
+
+        &:not(:last-child) {
+            color: #BCBCBC;
+            margin-right: 13px;
+            position: relative;
+
+            &:after {
+                content: '/';
+                color: black;
+                position: absolute;
+                top: 50%;
+                right: -9px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

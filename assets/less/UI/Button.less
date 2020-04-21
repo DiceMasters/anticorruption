@@ -1,4 +1,20 @@
 .button {
+    min-width: 224px;
+    height: 55px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: .5;
+    font-size: 16px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 13px;
+    cursor: pointer;
+
+    /**
+        Формфактор
+     */
     &__jumbo {
         height: 118px;
         display: flex;
@@ -27,6 +43,38 @@
             }
         }
     }
+    &__big { height: 69px; }
 
-    &, &:hover, &:focus { text-decoration: none; }
+    /**
+    Цвета
+     */
+    &__active {
+        background-color: @hover-color;
+        color: white;
+        border-color: @hover-color;
+
+        &.button__outline { color: @hover-color; }
+    }
+    
+    &__blue {
+        background-color: @blue-color;
+        color: white;
+        border-color: @blue-color;
+
+        &.button__outline { color: @blue-color; }
+    }
+
+    /**
+    Модификатор
+     */
+    &__outline {
+        background-color: transparent;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    &, &:hover, &:focus {
+        text-decoration: none;
+        outline: none;
+    }
 }
